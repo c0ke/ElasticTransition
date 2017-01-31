@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9D389E01E4070A30072F72D /* MotionAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D389DF1E4070A30072F72D /* MotionAnimation.framework */; };
 		E9F317EF1E40531E00CFC63F /* ElasticTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F317E51E40531D00CFC63F /* ElasticTransition.framework */; };
 		E9F317F41E40531E00CFC63F /* ElasticTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F317F31E40531E00CFC63F /* ElasticTransitionTests.swift */; };
 		E9F317F61E40531E00CFC63F /* ElasticTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E9F317E81E40531D00CFC63F /* ElasticTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,30 +27,10 @@
 			remoteGlobalIDString = E9F317E41E40531D00CFC63F;
 			remoteInfo = ElasticTransition;
 		};
-		E9F3184E1E4053F000CFC63F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F318491E4053F000CFC63F /* MotionAnimation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9F318171E40539E00CFC63F;
-			remoteInfo = MotionAnimation;
-		};
-		E9F318501E4053F000CFC63F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F318491E4053F000CFC63F /* MotionAnimation.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E9F318201E40539E00CFC63F;
-			remoteInfo = MotionAnimationTests;
-		};
-		E9F318571E40545F00CFC63F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E9F318491E4053F000CFC63F /* MotionAnimation.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = E9F318161E40539E00CFC63F;
-			remoteInfo = MotionAnimation;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E9D389DF1E4070A30072F72D /* MotionAnimation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MotionAnimation.framework; path = Carthage/Build/iOS/MotionAnimation.framework; sourceTree = "<group>"; };
 		E9F317E51E40531D00CFC63F /* ElasticTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElasticTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F317E81E40531D00CFC63F /* ElasticTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ElasticTransition.h; sourceTree = "<group>"; };
 		E9F317E91E40531D00CFC63F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,7 +43,6 @@
 		E9F318021E40533500CFC63F /* ElasticTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticTransition.swift; sourceTree = "<group>"; };
 		E9F318031E40533500CFC63F /* ElasticTransitionPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticTransitionPresentationController.swift; sourceTree = "<group>"; };
 		E9F318041E40533500CFC63F /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		E9F318491E4053F000CFC63F /* MotionAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MotionAnimation.xcodeproj; path = ../MotionAnimation/MotionAnimation.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9D389E01E4070A30072F72D /* MotionAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,18 +111,9 @@
 		E9F318481E4053F000CFC63F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E9F318491E4053F000CFC63F /* MotionAnimation.xcodeproj */,
+				E9D389DF1E4070A30072F72D /* MotionAnimation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E9F3184A1E4053F000CFC63F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E9F3184F1E4053F000CFC63F /* MotionAnimation.framework */,
-				E9F318511E4053F000CFC63F /* MotionAnimationTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +142,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E9F318581E40545F00CFC63F /* PBXTargetDependency */,
 			);
 			name = ElasticTransition;
 			productName = ElasticTransition;
@@ -228,12 +199,6 @@
 			mainGroup = E9F317DB1E40531D00CFC63F;
 			productRefGroup = E9F317E61E40531D00CFC63F /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E9F3184A1E4053F000CFC63F /* Products */;
-					ProjectRef = E9F318491E4053F000CFC63F /* MotionAnimation.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				E9F317E41E40531D00CFC63F /* ElasticTransition */,
@@ -241,23 +206,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		E9F3184F1E4053F000CFC63F /* MotionAnimation.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = MotionAnimation.framework;
-			remoteRef = E9F3184E1E4053F000CFC63F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E9F318511E4053F000CFC63F /* MotionAnimationTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = MotionAnimationTests.xctest;
-			remoteRef = E9F318501E4053F000CFC63F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9F317E31E40531D00CFC63F /* Resources */ = {
@@ -305,11 +253,6 @@
 			isa = PBXTargetDependency;
 			target = E9F317E41E40531D00CFC63F /* ElasticTransition */;
 			targetProxy = E9F317F01E40531E00CFC63F /* PBXContainerItemProxy */;
-		};
-		E9F318581E40545F00CFC63F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = MotionAnimation;
-			targetProxy = E9F318571E40545F00CFC63F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -423,6 +366,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ElasticTransition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -444,6 +391,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ElasticTransition/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
